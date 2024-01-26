@@ -311,9 +311,9 @@ def sbi_mcnoise(obs, run_params, sbi_params):
         samp_y_guess = np.copy(observed)
         samp_y_guess[noisy_idx] = stats.norm.rvs(loc=loc, scale=scale)
         # ensure positive uncertainties
-        _nnflag = False
+        _nnflag = True
         for ii, this_noisy_flux in enumerate(samp_y_guess[noisy_idx]):
-            print(lims[0][ii], lims[1][ii])
+            # print(lims[0][ii], lims[1][ii])
             if this_noisy_flux > lims[0][ii] and this_noisy_flux < lims[1][ii]:
                 _nnflag &= True
             else:
