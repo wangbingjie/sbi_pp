@@ -12,7 +12,7 @@ This repository contains the following scripts:
 
 ## Dependency
 
-The [sbi](https://github.com/sbi-dev/sbi) Python package, although the algorithms implemented in `sbi_pp.py` is not package-specific.
+The [sbi](https://github.com/sbi-dev/sbi) Python package (v0.21.0), although the algorithms implemented in `sbi_pp.py` is not package-specific.
 
 ## Citations
 
